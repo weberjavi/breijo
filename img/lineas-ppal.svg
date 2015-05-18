@@ -1,0 +1,36 @@
+
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 961.601 452.772" enable-background="new 0 0 961.601 452.772"
+	 xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_25_" x="0.502" y="592.298" width="960" height="40"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_25_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-4.641" y="299.603" clip-path="url(#SVGID_2_)" fill="#58595B" width="969.002" height="548"/>
+	</g>
+</g>
+<g>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M782.444,0.5c0,151.071,0,301.176,0,451.772
+		c32.197,0,63.453,0,96.117,0c0-151.238,0-301.32,0-451.772"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M117.561,0.5c0,85.969,0,171.166,0,256.719
+		c32.805,0,64.755,0,97.04,0c0-85.991,0-171.177,0-256.719"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M928.312,0.5c0,86.039,0,171.477,0,256.812
+		c11.046,0,21.948,0,32.79,0"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M636.023,0.5c0,85.951,0,171.142,0,256.78
+		c32.793,0,64.779,0,97.026,0c0-85.953,0-171.164,0-256.78"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M377.109,0.5c0,85.948,0,171.264,0,257.023
+		c32.575,0,64.206,0,96.916,0c0-86.398,0-171.503,0-257.023"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M0.5,257.331c22.519,0,44.904,0,67.699,0
+		c0-85.913,0-171.115,0-256.831"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M489.79,0.5c0,47.634,0,94.728,0,142.236c32.769,0,64.741,0,97.299,0
+		c0-47.63,0-94.735,0-142.236"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M489.58,257.534c33.246,0,64.839,0,97.283,0
+		c0-32.635,0-64.555,0-96.903c-32.809,0-64.757,0-97.283,0C489.58,193.119,489.58,224.708,489.58,257.534z"/>
+	<path fill="none" stroke="#939598" stroke-miterlimit="10" d="M231.061,0.5c0,20.852,0,41.404,0,61.818c32.814,0,64.468,0,96.733,0
+		c0-20.82,0-41.279,0-61.818"/>
+</g>
+</svg>

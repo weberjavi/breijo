@@ -1,0 +1,299 @@
+/* 	Modifica el modelo de cajas (box-model) 
+	creando los márgenes interiores (padding) 
+	y exteriores (margin) dentro de las medidas del elemento
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 	Evita que las imágenes aumenten de tamaño al aplicarles márgenes.
+	Referencia a ésta situación en los comentarios de:
+	https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+img { box-sizing: content-box; }
+
+/* 	Esta declaración obliga a los elementos a constreñir su ancho
+	al ancho del elemento que los contiene. Permitiendo así que 
+	regulen su tamaño aún cuando se modifique el tamaño del visor
+*/
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Estos estilos establecen las características del visor en dispositivos móviles */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/*
+	ADELANTE CON LA METRALLA (⌐■_■)--︻╦╤─ - - - (╥﹏╥) 
+*/
+body{
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+p{
+	color: #575757;
+}
+.separador { 
+	height: 1px;
+	background: #c6c6c6;
+	width: 100%;
+	margin: 30px 0 50px 0;
+ } 
+ .separador2 { 
+	height: 1px;
+	background: #c6c6c6;
+	width: 100%;
+	margin: 60px 0 20px 0;
+ }
+/*------------------------
+	CABECERA
+-------------------------*/
+#cabecera{
+
+	background-color: #575757;
+	width: 100vw;
+	height: 100vh;
+}
+.logo_cabecera{
+	text-align: center;
+	width: 100%;
+}
+.logo_cabecera img{
+	max-width: 350px;
+}
+nav{
+	position: absolute;
+	bottom: 3%;
+	width: 100%;
+}
+.menu{
+	text-align: center;
+	background-color: white;
+	padding: 1em 0;
+}
+.menu li{
+	display: inline;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1em;
+	margin-left: -10px;
+}
+#logo_menu{
+	position: absolute;
+	left: 10px;
+	opacity: 0;
+	transition:all 0.5s;
+}
+.menu_fijo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	margin: 0;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	z-index: 2000;
+}
+/*------------------------
+	PRESENTACIÓN
+-------------------------*/
+#presentacion{
+	max-width: 550px;
+	margin: 20px auto 0 auto;
+	font-size: 12px;
+}
+#presentacion p{
+	position: relative;
+	width: 47%;
+	padding:  0;
+}
+.presentacion_izq{
+	float: left;
+	text-align: right;
+}
+.presentacion_der{
+	float: right;
+	text-align: left;
+}
+#presentacion div{
+	max-width: 550px;
+	
+}
+.oficina{
+	max-width: 100%;
+	padding: 16px 0;
+}
+/*------------------------
+	SERVICIOS
+-------------------------*/
+#servicios{
+	position: relative;
+	max-width: 550px;
+	margin: 0 auto 30px auto;
+	font-size: 12px;
+}
+.servicios_seccion{
+	position: relative;
+	height: 140px;
+}
+.servicios_seccion p{
+	margin: 0;
+	}
+.texto_der{
+	max-width: 300px;
+	float: right;
+}
+.flecha_izq{
+	position: absolute;
+	min-width: 2000px;
+  	left: -1780px;
+}
+.texto_izq{
+	max-width: 300px;
+	float: left;
+	text-align: right;
+}
+.flecha_der{
+	position: absolute;
+	min-width: 2000px;
+  	left: 330px;
+}
+#instalaciones p{
+	margin-top: 10px;
+}
+/*------------------------
+	SLIDER
+-------------------------*/
+.slider{
+	background-color: #575757;
+}
+.diapositiva {
+  width: 100%; /* full width */
+  height: 125px; /* height of gallery */
+  margin-right: 10px;
+  background-color: #575757;
+  text-align: center;
+  color: white;
+  font-size: 56px;
+  line-height: 120px;
+  text-transform: uppercase;
+}
+.flickity-page-dots {
+  display: none;
+}
+.flickity-prev-next-button,
+.flickity-prev-next-button:hover{
+  background: transparent;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+/*------------------------
+	PROYECTOS
+-------------------------*/
+#proyectos{
+	max-width: 550px;
+	margin: 0 auto;
+}
+.proyectos_titulo{
+	margin: 0 auto;
+}
+.proyectos_titulo .titulo{
+	text-transform: uppercase;
+	font-size: 26px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+.proyectos_titulo .parrafo{
+	font-size: 12px;
+	text-align: center;
+	margin: 0px auto;
+	max-width: 330px;
+}
+#galeria{
+	margin-top: 15px;
+}
+.galeria_contenido{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_grid{
+	width: 165px;
+	height: 110px;
+	margin: 7px;
+}
+/*------------------------
+	LOGOS
+-------------------------*/
+#logos p{font-size: 12px; text-align: center; margin: 15px auto; max-width: 330px; color: #c7c7c7;}
+.contenedor_logos{ margin: 0 auto; width: 90%; height: 90px; max-width: 900px; display: flex; justify-content: center;}
+.img_logo{ position: relative; width: 150px; margin: 7px; opacity: 0.5;}
+.img_logo img{ position: absolute; top: 50%; transform: translate(0, -50%)}
+/*------------------------
+	CONTACTO
+-------------------------*/
+
+#contacto{
+	margin-top: 20px;
+	width: 100%;
+	height: 170px;
+	background-color:  #575757;
+}
+.contenedor_datos{
+	max-width: 530px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.logo_contacto{
+	width: 265px;
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+.datos{
+	float: right;
+	line-height: 13px;
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+.datos p{
+	color: white;
+	font-size: 12px;
+	font-weight: 300;
+}
+.datos_nombre{
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
