@@ -306,10 +306,7 @@ nav{
 	-moz-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
+	
 }
 .img_grid{
 	width: 165px;
