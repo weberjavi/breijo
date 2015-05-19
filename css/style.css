@@ -297,16 +297,21 @@ nav{
 	margin-top: 15px;
 }
 .galeria_contenido{
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	/*display: -webkit-box;  
+  	display: -ms-flexbox;  
   	-ms-box-orient: horizontal;
-  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: -webkit-flex; 
 	display: flex;
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	
+	-webkit-flex-flow:  wrap;
+	-moz-flex-flow:  wrap;
+	-ms-flex-flow:  wrap;
+	flex-flow:  wrap;*/
+	height: 250px;
+
 }
 .img_grid{
 	width: 165px;
@@ -314,6 +319,7 @@ nav{
 	margin: 7px;
 	overflow: hidden;
 	cursor: pointer;
+	float: left;
 }
 
 /*------------------------
@@ -321,22 +327,23 @@ nav{
 -------------------------*/
 #logos p{font-size: 12px; text-align: center; margin: 15px auto; max-width: 330px; color: #c7c7c7;}
 .contenedor_logos{
- 	margin: 0 auto;
-  	width: 90%;
+ 	margin: 20px auto 0 auto;
+  	width:100%;
    	height: 90px;
     max-width: 960px;
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+    text-align: center;
+    /*display: -webkit-box;   OLD - iOS 6-, Safari 3.1-6, BB7 
+  	display: -ms-flexbox;   TWEENER - IE 10 
   	-ms-box-orient: horizontal;
-  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: -webkit-flex;  NEW - Safari 6.1+. iOS 7.1+, BB10 
 	display: flex;
     -webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
-	justify-content: center;
+	justify-content: center;*/
 }
-.img_logo{ position: relative; width: 150px; margin: 7px; opacity: 0.5;}
-.img_logo img{ position: absolute; top: 50%; -webkit-transform: translate(0, -50%);transform: translate(0, -50%)}
+.img_logo{ display: inline-block;  position: relative; width: 13%; margin: 7px; opacity: 0.5;}
+.img_logo img{ position: absolute; top: 50%; -webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%)}
 /*------------------------
 	CONTACTO
 -------------------------*/
