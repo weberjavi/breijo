@@ -41,6 +41,7 @@ body{
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x:hidden;
+	min-width: 600px;
 }
 ul{
 	list-style: none;
@@ -76,6 +77,7 @@ p{
 .logo_cabecera{
 	text-align: center;
 	width: 100%;
+	min-width: 600px;
 }
 .logo_cabecera img{
 	max-width: 350px;
@@ -89,6 +91,7 @@ nav{
 	text-align: center;
 	background-color: white;
 	padding: 1em 0;
+	min-width: 600px;
 }
 .menu li{
 	display: inline;
@@ -159,40 +162,87 @@ nav{
 	SERVICIOS
 -------------------------*/
 #servicios{
-	position: relative;
-	max-width: 550px;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 60px auto;
 	font-size: 12px;
+	width: 100%;
 }
-.servicios_seccion{
-	position: relative;
-	height: 140px;
+.seccion_servicios{
+	width: 100%;
+	height: 120px;
+	margin-bottom: 20px;
 }
-.servicios_seccion p{
-	margin: 0;
-	}
-.texto_der{
-	width: 54.545454545455%; /*300/550*/
-	float: right;
-}
-.flecha_izq{
-	position: absolute;
-	min-width: 2000px;
-  	left: -1780px;
-}
-.texto_izq{
-	max-width: 54.545454545455%; /*300/550*/
+.bloque_izq{
+	width: calc(45% - 70px);
+	height:120px;
+	background-color: #575757;
 	float: left;
 	text-align: right;
 }
-.flecha_der{
-	position: absolute;
-	min-width: 2000px;
-  	left: 330px;
+.bloque_izq img{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	transform: translateY(-50%);
 }
-#instalaciones p{
-	margin-top: 10px;
+.triangulo_derecha {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 60px 0 60px 65px;
+	border-color: transparent transparent transparent #575757;
+	float: left;
 }
+.texto_derecha{
+	float: left;
+	max-width: 300px;
+	height: 120px;
+	padding-left: 20px;
+}
+.bloque_derecha{
+	width: calc(45% - 70px);
+	height:120px;
+	background-color: #575757;
+	float: right;
+	text-align: left;
+}
+.bloque_derecha img{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+.texto_izquierda{
+	float: right;
+	max-width: 300px;
+	height: 120px;
+	padding-right: 20px;
+	text-align: right;
+}
+.triangulo_izquierda{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 60px 65px 60px 0;
+	border-color: transparent #575757 transparent transparent;
+	float: right;
+}
+.tex_1{
+	position: relative;
+	top: 20%;
+}
+.tex_2{
+	position: relative;
+	top: 10%;
+}
+.tex_3{
+	position: relative;
+	top: 10%;
+}
+.tex_4{
+	position: relative;
+	top: 10%;
+}
+
 /*------------------------
 	SLIDER
 -------------------------*/
@@ -407,19 +457,34 @@ nav{
 ------------------------------------------------------------------------
 	               MEDIA QUERIES                        
 ------------------------------------------------------------------------
-----------------------------------------------------------------------
-@media (min-width: 1000px){
+----------------------------------------------------------------------*/
+
+@media (max-width: 985px){
+	.flickity-prev-next-button .arrow {
+	  fill: none;
+	}
+	.contenedor_logo_menu{
+		width: 100%;
+		padding-left: 20px;
+	}
+	.menu_fijo{
+		min-width: 600px;
+		text-align: right;
+	}
+	
+}
+/*@media (min-width: 1000px){
 	.lineas_cabecera{
 		top: -100px;
 		width: 100%;
 		position: absolute;
 	}
 }
-@media (min-width: 1650px){
+
 	.lineas_cabecera{
 		top: -200px;
 	}
-}
+
 @media (max-width: 580px) {
 	.texto_izq{
 		max-width: 250px;
@@ -475,5 +540,3 @@ nav{
 }
 
 */
-
-
