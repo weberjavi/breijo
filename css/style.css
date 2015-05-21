@@ -41,6 +41,7 @@ body{
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x:hidden;
+	width: 100%;
 	min-width: 600px;
 }
 ul{
@@ -81,7 +82,8 @@ p{
 	min-width: 600px;
 }
 .logo_cabecera img{
-	max-width: 350px;
+	max-width: 36.458333333%; /* 350px / 960px */
+	min-width: 350px; /*nueva regla*/
 }
 nav{
 	position: absolute;
@@ -103,7 +105,7 @@ nav{
 }
 .contenedor_logo_menu{
 	position: absolute;
-	width: 960px;
+	width: 90%;/*nueva regla, sustituye a 960px*/
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -134,7 +136,8 @@ nav{
 	PRESENTACIÓN
 -------------------------*/
 #presentacion{
-	max-width: 550px;
+	/*max-*/width: 57.291666666%; /* 550 / 960 */
+	min-width: 550px; /*nueva regla*/
 	margin: 20px auto 0 auto;
 	font-size: 12px;
 }
@@ -152,7 +155,9 @@ nav{
 	text-align: left;
 }
 #presentacion div{
-	max-width: 550px;
+	width: 100%; /* 550 / 550 */
+	min-width: 550px; /*nueva regla*/
+	margin: 0 auto;
 	
 }
 .oficina{
@@ -195,7 +200,8 @@ nav{
 }
 .texto_derecha{
 	float: left;
-	max-width: 300px;
+	/*max-*/width: 31.25%; /* 300px / 960px */
+	min-width: 300px; /*nueva regla*/
 	height: 120px;
 	padding-left: 20px;
 }
@@ -214,7 +220,8 @@ nav{
 }
 .texto_izquierda{
 	float: right;
-	max-width: 300px;
+	/*max-*/width: 31.25%; /* 300px / 960px */
+	min-width: 300px; /*nueva regla*/
 	height: 120px;
 	padding-right: 20px;
 	text-align: right;
@@ -275,7 +282,8 @@ nav{
 	PROYECTOS
 -------------------------*/
 #proyectos{
-	max-width: 550px;
+	/*max-*/width: 57.291666666%; /* 550 / 960 */
+	min-width: 550px; /*nueva regla*/
 	margin: 0 auto;
 }
 .proyectos_titulo{
@@ -315,7 +323,7 @@ nav{
 
 }
 .img_grid{
-	width: 165px;
+	width: 30%; /* 165px / 550px */
 	height: 110px;
 	margin: 7px;
 	overflow: hidden;
@@ -326,7 +334,7 @@ nav{
 /*------------------------
 	LOGOS
 -------------------------*/
-#logos p{font-size: 12px; text-align: center; margin: 15px auto; max-width: 330px; color: #c7c7c7;}
+#logos p{font-size: 12px; text-align: center; margin: 15px auto 50px auto; max-width: 330px; color: #c7c7c7;}
 .contenedor_logos{
  	margin: 20px auto 0 auto;
   	width:100%;
@@ -356,13 +364,16 @@ nav{
 	background-color:  #575757;
 }
 .contenedor_datos{
-	max-width: 530px;
+	width: 55.208333333%; /* 530px / 960px */
+	max-width: 960px;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
 }
 .logo_contacto{
-	width: 265px;
+	width:50%; /* 265px / 530px */
+	max-width: 350px;
+	min-width: 265px;
 	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -468,10 +479,10 @@ nav{
 	.flickity-prev-next-button .arrow {
 	  fill: none;
 	}
-	.contenedor_logo_menu{
+	/*.contenedor_logo_menu{
 		width: 100%;
 		padding-left: 20px;
-	}
+	}*/
 	.menu_fijo{
 		min-width: 600px;
 		text-align: right;
